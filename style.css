@@ -1,0 +1,31 @@
+:root{
+    --color-primario: #1A2B4A;
+    --color-secundario: #FFA500;
+    --fuente: sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: url(images/portada.png);
+    background-repeat: no-repeat;
+    background-size: cover;     /* Estirar la imagen hasta los bordes del header*/
+    background-position: center center;
+    padding: 1.5rem;
+
+    display: flex;
+    justify-content: center;    /* Centra todo el contenido */
+    align-items: center;        /* Centra el contenido en el centro del header */
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+}
+h1{
+    color: rgb(245, 243, 243);
+    font-family: var(--fuente);
+}
