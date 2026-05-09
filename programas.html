@@ -55,6 +55,35 @@
                 <p><strong>Cómo participar:</strong> Uniéndote a nuestras jornadas de limpieza que se realizan mensualmente en diferentes puntos de la ciudad.</p>
             </article>
         </section>
+        <section>
+            <h2>Inscripción a Programas</h2>
+            <p>Para inscribirte en alguno de nuestros programas, completa el siguiente formulario.</p>
+            <form action="">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                <label for="programa">Programa de interés:</label>
+                <select id="programa" name="programa" required>
+                    <option value="">Selecciona un programa</option>
+                    <option value="reforestacion">Reforestación Urbana</option>
+                    <option value="educacion">Educación Ambiental</option>
+                    <option value="limpieza">Limpieza de Espacios Públicos</option>
+                </select>
+                <label for="tipo">¿Quién realiza la consulta?</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="adulto">Adulto</option>
+                    <option value="organizacion">Organización</option>
+                </select>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Deje su mensaje" rows="4"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
     <footer> <!-- Pie de página -->
