@@ -67,3 +67,32 @@ aside{
 section ul{
     margin: 1.2rem;
 }
+.formulario{
+    background-color: rgba(239, 218, 191, 0.7);
+    padding: 1rem;
+    margin: 10px;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.formulario label {
+    font-weight: bold;
+}
+.formulario input, .formulario select, .formulario textarea {
+    font-family: var(--fuente);
+    padding: 0.3rem;
+    font-size: small;
+}
+button{
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+    align-self: center;
+}
