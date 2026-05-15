@@ -76,9 +76,33 @@ body{
     max-width: 1200px;  /* Pixeles de ancho que se usan de la pantalla */
     margin: 0 auto;     /* Separación del resto de los elementos */
     background-image: url(images/portada.png);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Oscurece el fondo para dar más contraste */
+    backdrop-filter: blur(8px); /* Aplica el desenfoque (subí el número para más blur) */
+    z-index: 1;
+    border-radius: 50px;
 }
+
+/*MENU*/
+
 main{
     padding: 1.5;
+}
+
+main .menu-presentacion{
+    text-align: left;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+
+main .boton-presentacion button{
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+main .menu-presentacion h1{
+    text-align: left;
 }
 
 h2{
@@ -126,4 +150,13 @@ button{
     align-self: center;
     font-size: small;
     display: inline-block;
+    transition: 0.2s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.resaltar{
+    color: rgb(0, 65, 0);
 }
