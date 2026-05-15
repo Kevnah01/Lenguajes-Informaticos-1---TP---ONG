@@ -12,21 +12,63 @@
 header{
     justify-items: center;
     font-family: var(--fuente);
-}
-nav a{
-    text-decoration: none;
-}
-nav a:hover{
-    color: white;
-}
-nav ul{
-    font-size: 1.2rem;
 
-    display: flex;
-    gap: 3rem;
-    list-style: none;
-    justify-items: center;
 }
+
+/* NAVBAR */
+header .nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+/* LOGO + TEXTO A LA IZQUIERDA */
+header .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* separación entre logo y texto */
+}
+
+/* IMAGEN */
+header .logo img{
+    width: 60px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+header .logo img:hover{
+    transform: scale(1.1);
+}
+
+/* TEXTO */
+header .logo h1{
+    margin: 0;
+    color: rgb(0, 65, 0);
+}
+
+/* MENÚ EN EL CENTRO */
+header .nav-links ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin-right: 400px;
+    margin-left: 250px;
+}
+
+/* LINKS */
+header .nav-links ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header .nav-links ul a:hover{
+    color: rgb(0, 65, 0);
+    text-decoration-line: underline;
+}
+
 body{
     font-family: var(--fuente);
     font-size: 16px;
@@ -38,11 +80,7 @@ body{
 main{
     padding: 1.5;
 }
-h1{
-    color: rgb(245, 243, 243);
-    font-family: var(--fuente);
-    font-size: 3rem;
-}
+
 h2{
 
 }
@@ -80,10 +118,12 @@ button{
     background-color: var(--color-secundario);
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     cursor: pointer;
     border-radius: 20px;
     font-size: medium;
     font-weight: bold;
     align-self: center;
+    font-size: small;
+    display: inline-block;
 }
