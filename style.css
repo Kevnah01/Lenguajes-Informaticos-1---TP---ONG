@@ -160,3 +160,16 @@ button:hover{
 .resaltar{
     color: rgb(0, 65, 0);
 }
+
+.quienes-somos{
+    background-color: rgba(239, 218, 191, 0.7);
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.quienes-somos img{
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto;
+}
