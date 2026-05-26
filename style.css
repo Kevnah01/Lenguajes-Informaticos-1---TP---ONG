@@ -1,6 +1,7 @@
 :root{
-    --color-primario: #1A2B4A;
-    --color-secundario: #FFA500;
+    --color-primario: rgb(15, 115, 15);
+    --color-secundario: #2ba329c2;
+    --color-caja: #afc9afc2;
     --fuente: "PT Serif", serif;    /* Fuente importada de google fonts*/
 }
 
@@ -12,7 +13,6 @@
 header{
     justify-items: center;
     font-family: var(--fuente);
-
 }
 
 /* NAVBAR */
@@ -44,7 +44,7 @@ header .logo img:hover{
 /* TEXTO */
 header .logo h1{
     margin: 0;
-    color: rgb(0, 65, 0);
+    color: var(--color-primario);
 }
 
 /* MENÚ EN EL CENTRO */
@@ -65,7 +65,7 @@ header .nav-links ul a{
 }
 
 header .nav-links ul a:hover{
-    color: rgb(0, 65, 0);
+    color: var(--color-primario);
     text-decoration-line: underline;
 }
 
@@ -90,19 +90,15 @@ main{
 }
 
 main .menu-presentacion{
-    text-align: left;
-    margin-left: 60px;
-    margin-top: 60px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 1rem;
 }
 
 main .boton-presentacion button{
     margin-top: 25px;
     margin-left: 10px;
     margin-right: 10px;
-}
-
-main .menu-presentacion h1{
-    text-align: left;
 }
 
 h2{
@@ -112,7 +108,8 @@ h3{
 
 }
 article, footer, aside, .formulario{
-    background-color: rgba(239, 218, 191, 0.7);
+    /* background-color: rgba(250, 227, 198, 0.7); COLOR ORIGINAL */
+    background-color: var(--color-caja);
     padding: 1rem;
     margin: 10px;
     border-radius: 10px;
@@ -158,7 +155,7 @@ button:hover{
 }
 
 .resaltar{
-    color: rgb(0, 65, 0);
+    color: rgb(15, 115, 15);
 }
 
 .quienes-somos{
