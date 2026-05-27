@@ -1,7 +1,7 @@
 :root{
     --color-primario: rgb(15, 115, 15);
-    --color-secundario: #2ba329c2;
-    --color-caja: #afc9afc2;
+    --color-secundario: #2ba329;
+    --color-caja: #c9b0afc2;
     --fuente: "PT Serif", serif;    /* Fuente importada de google fonts*/
 }
 
@@ -11,8 +11,12 @@
     padding: 0;
 }
 header{
+    position: relative;
     justify-items: center;
     font-family: var(--fuente);
+    background-color: white;
+    z-index: 1; /*Para que quede encima de todo*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.518);
 }
 
 /* NAVBAR */
@@ -20,7 +24,7 @@ header .nav-links{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 3rem;
+    padding: 0.5rem;
 }
 
 /* LOGO + TEXTO A LA IZQUIERDA */
@@ -73,14 +77,9 @@ body{
     font-family: var(--fuente);
     font-size: 16px;
     line-height: 1.6;   /* Separación de renglones */
-    max-width: 1200px;  /* Pixeles de ancho que se usan de la pantalla */
     margin: 0 auto;     /* Separación del resto de los elementos */
-    background-image: url(images/portada.png);
+    background-color: rgb(252, 239, 220);
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Oscurece el fondo para dar más contraste */
-    backdrop-filter: blur(8px); /* Aplica el desenfoque (subí el número para más blur) */
-    z-index: 1;
-    border-radius: 50px;
 }
 
 /*MENU*/
@@ -91,8 +90,23 @@ main{
 
 main .menu-presentacion{
     text-align: center;
-    margin-top: 30px;
-    padding: 1rem;
+    padding: 180px 20px 180px 20px;
+    background-image: url(images/portada.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.menu-texto{
+    margin-top: -130px;
+}
+.menu-texto h2{
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.menu-texto p{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
 main .boton-presentacion button{
@@ -104,15 +118,51 @@ main .boton-presentacion button{
 h2{
 
 }
-h3{
-
-}
 article, footer, aside, .formulario{
     /* background-color: rgba(250, 227, 198, 0.7); COLOR ORIGINAL */
-    background-color: var(--color-caja);
-    padding: 1rem;
-    margin: 10px;
-    border-radius: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+    border-radius: 1px;
+}
+article{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 4rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*Estilos de presentación del INDEX*/
+.contenedor-estilo{
+    background-color: white;
+    max-width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedor h2{
+    font-size: 2rem;
+}
+.contenedor p{
+    font-size: 1.2rem;
+}
+.contenedor-resaltado{
+    color: var(--color-primario);
+    font-weight: bold;
+}
+.contenedor-texto-imagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contenedor-imagen{
+
 }
 
 section ul{
@@ -155,7 +205,7 @@ button:hover{
 }
 
 .resaltar{
-    color: rgb(15, 115, 15);
+    color: rgb(6, 138, 6);
 }
 
 .quienes-somos{
