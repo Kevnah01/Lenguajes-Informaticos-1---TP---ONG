@@ -1,0 +1,239 @@
+/* VARIABLES */
+:root{
+    --color-primario: rgb(15, 115, 15);
+    --color-secundario: #2ba329;
+    --color-caja: #c9b0afc2;
+    --fuente: "PT Serif", serif;    /* Fuente importada de google fonts*/
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;    /* Se mueve con toda la ventana */
+    right: 0;
+    left: 0;
+    /* justify-items: center; */
+    font-family: var(--fuente);
+    background-color: white;
+    z-index: 1; /*Para que quede encima de todo*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.518); /* Sombra */
+}
+
+/* NAVBAR */
+header .nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+/* LOGO + TEXTO A LA IZQUIERDA */
+header .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* separación entre logo y texto */
+}
+
+/* IMAGEN */
+header .logo img{
+    width: 60px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+header .logo img:hover{
+    transform: scale(1.1);
+}
+
+/* TEXTO */
+header .logo h1{
+    margin: 0;
+    color: var(--color-primario);
+}
+
+/* MENÚ EN EL CENTRO */
+header .nav-links ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin-right: 400px;
+    margin-left: 250px;
+}
+
+/* LINKS */
+header .nav-links ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header .nav-links ul a:hover{
+    color: var(--color-primario);
+    text-decoration-line: underline;
+}
+
+body{
+    font-family: var(--fuente);
+    font-size: 16px;
+    line-height: 1.6;   /* Separación de renglones */
+    margin: 0 auto;     /* Separación del resto de los elementos */
+    background-color: rgb(252, 239, 220);
+    height: 100%;
+}
+
+/*MENU*/
+
+main{
+    /* max-width: 1000px; */
+    /* margin: 0 auto; */
+    padding: 1.5rem;
+}
+
+main .menu-presentacion{
+    text-align: center;
+    padding: 180px 20px 180px 20px;
+    background-image: url('../imagenes/portada.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.menu-texto{
+    margin-top: -40px;
+}
+.menu-texto h2{
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.menu-texto p{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+main .boton-presentacion button{
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+article, footer, aside, .formulario{
+    background-color: white;
+    padding-bottom: 10px;
+    border-radius: 1px;
+}
+
+article{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+article h2{
+    font-size: 2rem;
+}
+article h3{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+article p{
+    font-size: 1.2rem;
+}
+article dt{
+    font-size: 1.5rem;
+}
+article dd{
+    font-size: 1.2rem;
+}
+article li{
+    font-size: 1.2rem;
+}
+article em{
+    font-style: normal;
+}
+footer{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+/*Clases genéricas de diseño de articulos*/
+.contenedor-resaltado{
+    color: var(--color-primario);
+    font-weight: bold;
+}
+.contenedor-texto-imagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contenedor-imagen{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+section ul{
+    margin: 1.2rem;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input, .formulario select, .formulario textarea {
+    font-family: var(--fuente);
+    padding: 0.3rem;
+    font-size: small;
+}
+
+button{
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+    align-self: center;
+    font-size: small;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.resaltar{
+    color: rgb(6, 138, 6);
+}
+
+.quienes-somos{
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.quienes-somos img{
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto;
+}
