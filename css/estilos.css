@@ -91,6 +91,7 @@ main{
     /* max-width: 1000px; */
     /* margin: 0 auto; */
     padding: 1.5rem;
+    padding-top: 83px; /* Para que no quede debajo del header */
 }
 
 main .menu-presentacion{
@@ -230,6 +231,7 @@ button:hover{
     padding: 1rem;
     margin: 10px;
     border-radius: 10px;
+    padding-top: 83px; /* Para que no quede debajo del header */
 }
 
 .quienes-somos img{
