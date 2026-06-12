@@ -239,3 +239,27 @@ button:hover{
     max-width: 400px;
     margin: 1rem auto;
 }
+
+.contenedor-programas{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    flex: 1;
+    min-width: 280px;
+    background-color:white;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.tarjeta h2{
+    color: var(--color-primario);
+}
