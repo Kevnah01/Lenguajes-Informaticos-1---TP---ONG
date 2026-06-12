@@ -264,3 +264,16 @@ button:hover{
     margin-top: auto;
     padding: 1.2rem;
 }
+
+.imagen-programa {
+    width: 100%;       /* La imagen ocupará todo el ancho del contenedor de la tarjeta */
+    height: 360px;     /* Ajustá esta altura según qué tan alta quieras la imagen en la tarjeta */
+    overflow: hidden;  /* Recorta cualquier parte de la imagen que intente salirse del contenedor */
+}
+
+.imagen-programa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen llene el contenedor de forma proporcional sin deformarse */
+    border-radius: 8px; /* Opcional: agrega bordes redondeados a la imagen para que coincida con el estilo de la tarjeta */
+}
