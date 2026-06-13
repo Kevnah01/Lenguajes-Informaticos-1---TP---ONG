@@ -15,7 +15,6 @@ header{
     position: sticky;   /* Permite que el header se quede fijo en la parte superior al hacer scroll */
     top: 0;             /* Se pega al top de la ventana */
     width: 100%;         /* Ocupa todo el ancho de la ventana */
-    justify-items: center;
     font-family: var(--fuente);
     background-color: white;
     z-index: 1; /*Para que quede encima de todo*/
