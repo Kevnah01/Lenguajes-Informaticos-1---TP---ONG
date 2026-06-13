@@ -239,6 +239,7 @@ button:hover{
     gap: 20px; /* Agrega espacio entre las tarjetas */
     justify-content: space-between; /* Distribuye las tarjetas estirando el espacio sobrante entre ellas hacia los extremos */
     padding: 20px; /* Agrega algo de espacio alrededor de las tarjetas para que no queden pegadas al borde del contenedor */
+    padding-top: 0; /* Elimina el padding superior para que las tarjetas queden más cerca del menu */
     flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la siguiente línea si ya no caben en la pantalla */
 }
 
