@@ -237,23 +237,23 @@ button:hover{
 }
 
 .contenedor-programas{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: space-between;
-    padding: 20px;
-    flex-wrap: wrap;
+    display: flex; /* Permite usar flexbox para organizar las tarjetas de los programas */
+    flex-direction: row; /* Organiza las tarjetas en una fila */
+    gap: 20px; /* Agrega espacio entre las tarjetas */
+    justify-content: space-between; /* Distribuye las tarjetas estirando el espacio sobrante entre ellas hacia los extremos */
+    padding: 20px; /* Agrega algo de espacio alrededor de las tarjetas para que no queden pegadas al borde del contenedor */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la siguiente línea si ya no caben en la pantalla */
 }
 
 .tarjeta{
-    flex: 1;
-    min-width: 280px;
-    background-color:white;
-    padding: 20px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
+    flex: 1; /* Permite que todas las tarjetas de la misma fila se estiren y midan lo mismo de ancho */
+    min-width: 280px; /* Asegura que las tarjetas no se vuelvan demasiado pequeñas en pantallas más pequeñas */
+    background-color:white; 
+    padding: 20px; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Agrega una sombra para darle profundidad a la tarjeta */
+    display: flex; /* Permite usar flexbox para organizar el contenido dentro de la tarjeta */
+    flex-direction: column; /* Organiza el contenido de la tarjeta en una columna */
+    border-radius: 8px; /* Redondea los bordes de la tarjeta */
 }
 
 .tarjeta h2{
@@ -261,19 +261,15 @@ button:hover{
 }
 
 .tarjeta ol, .tarjeta ul{
-    margin-top: auto;
-    padding: 1.2rem;
+    margin-top: auto; /* Empuja la lista hacia abajo tomando el espacio sobrante de la tarjeta y lo usa arriba para empujar la lista hacia abajo */
+    padding: 1.2rem; /* Agrega algo de espacio entre el contenido de la tarjeta y la lista */
+    padding-left: 0; /* Elimina el padding izquierdo para que los números o viñetas estén alineados con el borde de la tarjeta */
+    list-style-position: inside; /* Asegura que los números o viñetas estén dentro del contenedor de la tarjeta */
 }
 
 .imagen-programa {
-    width: 100%;       /* La imagen ocupará todo el ancho del contenedor de la tarjeta */
-    height: 360px;     /* Ajustá esta altura según qué tan alta quieras la imagen en la tarjeta */
-    overflow: hidden;  /* Recorta cualquier parte de la imagen que intente salirse del contenedor */
-}
-
-.imagen-programa img {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor de la tarjeta */
+    height: auto; /* Modifica el alto automaticamente para mantener la proporción */
     object-fit: cover; /* Hace que la imagen llene el contenedor de forma proporcional sin deformarse */
-    border-radius: 8px; /* Opcional: agrega bordes redondeados a la imagen para que coincida con el estilo de la tarjeta */
+    border-radius: 8px; /* Agrega bordes redondeados a la imagen para que coincida con el estilo de la tarjeta */
 }
