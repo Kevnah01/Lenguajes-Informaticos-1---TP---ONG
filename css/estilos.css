@@ -12,10 +12,10 @@
     padding: 0;
 }
 header{
-    position: fixed;    /* Se mueve con toda la ventana */
-    right: 0;
-    left: 0;
-    /* justify-items: center; */
+    position: sticky;   /* Permite que el header se quede fijo en la parte superior al hacer scroll */
+    top: 0;             /* Se pega al top de la ventana */
+    width: 100%;         /* Ocupa todo el ancho de la ventana */
+    justify-items: center;
     font-family: var(--fuente);
     background-color: white;
     z-index: 1; /*Para que quede encima de todo*/
@@ -82,7 +82,6 @@ body{
     line-height: 1.6;   /* Separación de renglones */
     margin: 0 auto;     /* Separación del resto de los elementos */
     background-color: rgb(252, 239, 220);
-    height: 100%;
 }
 
 /*MENU*/
@@ -91,7 +90,6 @@ main{
     /* max-width: 1000px; */
     /* margin: 0 auto; */
     padding: 1.5rem;
-    padding-top: 83px; /* Para que no quede debajo del header */
 }
 
 main .menu-presentacion{
@@ -227,7 +225,6 @@ button:hover{
     padding: 1rem;
     margin: 10px;
     border-radius: 10px;
-    padding-top: 83px; /* Para que no quede debajo del header */
 }
 
 .quienes-somos img{
