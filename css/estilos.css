@@ -243,8 +243,7 @@ button:hover{
 }
 
 .tarjeta{
-    flex: 1; /* Permite que todas las tarjetas de la misma fila se estiren y midan lo mismo de ancho */
-    min-width: 280px; /* Asegura que las tarjetas no se vuelvan demasiado pequeñas en pantallas más pequeñas */
+    flex: 1 1 280px; /* Permite que cada tarjeta tome el mismo espacio disponible, pero no se reduzca por debajo de 280px de ancho */
     background-color:white; 
     padding: 20px; 
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Agrega una sombra para darle profundidad a la tarjeta */
