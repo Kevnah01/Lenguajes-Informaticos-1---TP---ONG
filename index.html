@@ -38,7 +38,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container-sm">
         <div class="menu-presentacion">
             <div class="menu-texto">
                 <h2>Construyamos juntos<br>un futuro <span class="resaltar">sostenible</span></h2>
@@ -46,17 +46,19 @@
             </div>
             <a href="#" class="boton-presentacion"><button>Únete al cambio</button></a>
         </div>
-        <section>
-            <article>
-                <div class="contenedor-texto-imagen">
+
+        <section class="row">
+            <article class="col-12 mt-4">    <!-- Ocupa las 12 columnas de la fila y tiene un margin top de 4-->
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                     <div class="contenedor-texto">
                         <h2>Presentación</h2>
                         <p>Somos una organizacion sin fines de lucro dedicada a <span class="contenedor-resaltado">construir un mañana mejor</span> a través de la <span class="contenedor-resaltado">educación ambiental</span> y proyectos colectivos que <span class="contenedor-resaltado">transforman nuestro entorno</span>.</p>
                     </div>
-                        <img class="contenedor-imagen" width="300px" src="imagenes/logo-presentacion.png" alt="Imagen de presentación">
-                    </div>
-                </article>
-            <article>
+                    <img class="contenedor-imagen img-fluid" src="imagenes/logo-presentacion.png" alt="Imagen de presentación">
+                </div>
+            </article>
+
+            <article class="col-12 p-2">
                 <div class="contenedor-texto">
                     <h3>¿Por qué lo hacemos?</h3>
                     <p>Creemos en el poder de la participación vecinal. Trabajamos para <em class="contenedor-resaltado">recuperar los espacios verdes de nuestra comunidad y fomentar un futuro sostenible</em> mediante el compromiso ambiental y el trabajo colaborativo.</p>
@@ -64,7 +66,7 @@
                 </div>
             </article>
 
-            <article>
+            <article class="col-12 col-md-8"> 
                 <div class="contenedor-texto">
                     <h3>Acciones que transforman</h3>
                     <dl>
@@ -85,7 +87,7 @@
                 </div>
             </article>
 
-            <article>
+            <article class="col-12 col-md-4">  
                 <div class="contenedor-texto">
                     <h3>Impacto logrado</h3>
                     <ul>
@@ -105,16 +107,20 @@
 
     </main>
 
-    <footer> 
-        <p>&copy; 2026 ONG Ambiental VerdeFuturo. Todos los derechos reservados.</p>
-        <p>Whatsapp: <a href="tel:+541145983644">+54 11 4598 3644</a></p>
-        <p>Correo electrónico: <a href="mailto:info@verdefuturo.org.ar">info@verdefuturo.org.ar</a></p>
-        <p>Av. Falsa 1234, Piso 3, CP 1686, Hurlingham, GBA</p>
-        <a href="#titulo">Volver al inicio</a>
-        <address>
+    <footer class="container"> 
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <p>Whatsapp: <a href="tel:+541145983644">+54 11 4598 3644</a></p>
+            <p>Correo electrónico: <a href="mailto:info@verdefuturo.org.ar">info@verdefuturo.org.ar</a></p>
+            <p>Av. Falsa 1234, Piso 3, CP 1686, Hurlingham, GBA</p>
+            <a href="#titulo">Volver al inicio</a>
+        </div>
+        <address class="container borde-superior">
             Contacto de diseño: <a href="mailto:diseñoweb@progradores.com.ar">diseñoweb@progradores.com.ar</a><br>
             Ciudad de Buenos Aires, Argentina
         </address>
+        <div class="text-center borde-superior">
+            <p>&copy; 2026 ONG Ambiental VerdeFuturo. Todos los derechos reservados.</p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
