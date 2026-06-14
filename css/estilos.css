@@ -22,7 +22,17 @@ header{
 }
 
 /* NAVBAR */
-header .nav-links{
+.nav-link{
+    color: black;
+    font-weight: bold;
+}
+
+/*Aplicamos el color verde de la ONG y el subrayado al pasar el mouse */
+.nav-link:hover {
+    color: var(--color-primario);
+    text-decoration: underline;
+}
+/*header .nav-links{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,17 +41,18 @@ header .nav-links{
 }
 
 /* LOGO + TEXTO A LA IZQUIERDA */
-header .logo{
+/*header .logo{
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
 /* IMAGEN */
 header .logo img{
-    width: 60px;
-    height: 60px;
     transition: 0.2s;
     cursor: pointer;
+    width: 60px;
+    height: 60px;
 }
 
 header .logo img:hover{
@@ -54,26 +65,6 @@ header .logo h1{
     color: var(--color-primario);
 }
 
-/* MENÚ EN EL CENTRO */
-header .nav-links > ul{
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    padding-right: 1rem;
-    margin: 0;
-}
-
-/* LINKS */
-header .nav-links ul a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-header .nav-links ul a:hover{
-    color: var(--color-primario);
-    text-decoration-line: underline;
-}
 
 body{
     font-family: var(--fuente);
@@ -265,28 +256,4 @@ button:hover{
 h1{
     color: var(--color-primario);
     font-weight: bold;
-}
-
-.nav-celular {
-    list-style: none;
-    padding: 1rem 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column; /* Apila los links uno abajo del otro en el celular */
-    width: 100%;
-    gap: 0.5rem; /* Agrega espacio entre los links para que no queden pegados en el celular */
-    text-align: center; /* Centra los links en la pantalla del celular */
-    background-color: white;
-}
-
-.nav-celular a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    display: block;
-    padding: 0.5rem; /* Agrega algo de espacio alrededor de cada link para que sean más fáciles de tocar en el celular */
-}
-
-.nav-celular a:hover {
-    color: var(--color-primario);
 }
