@@ -27,18 +27,19 @@ header .nav-links{
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem;
+    color: black;
 }
 
 /* LOGO + TEXTO A LA IZQUIERDA */
 header .logo{
     display: flex;
     align-items: center;
-    gap: 10px; /* separación entre logo y texto */
 }
 
 /* IMAGEN */
 header .logo img{
     width: 60px;
+    height: 60px;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -54,13 +55,12 @@ header .logo h1{
 }
 
 /* MENÚ EN EL CENTRO */
-header .nav-links ul{
+header .nav-links > ul{
     display: flex;
     gap: 2rem;
     list-style: none;
-    padding: 0;
-    margin-right: 400px;
-    margin-left: 250px;
+    padding-right: 1rem;
+    margin: 0;
 }
 
 /* LINKS */
@@ -268,4 +268,33 @@ button:hover{
     height: auto; /* Modifica el alto automaticamente para mantener la proporción */
     object-fit: cover; /* Hace que la imagen llene el contenedor de forma proporcional sin deformarse */
     border-radius: 8px; /* Agrega bordes redondeados a la imagen para que coincida con el estilo de la tarjeta */
+}
+
+h1{
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+.nav-celular {
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Apila los links uno abajo del otro en el celular */
+    width: 100%;
+    gap: 0.5rem; /* Agrega espacio entre los links para que no queden pegados en el celular */
+    text-align: center; /* Centra los links en la pantalla del celular */
+    background-color: white;
+}
+
+.nav-celular a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: 0.5rem; /* Agrega algo de espacio alrededor de cada link para que sean más fáciles de tocar en el celular */
+}
+
+.nav-celular a:hover {
+    color: var(--color-primario);
 }
