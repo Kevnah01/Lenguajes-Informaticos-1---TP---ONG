@@ -86,6 +86,7 @@ main .menu-presentacion{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
 }
 .menu-texto{
     margin-top: -40px;
@@ -225,25 +226,55 @@ button:hover{
     flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la siguiente línea si ya no caben en la pantalla */
 }
 
-.tarjeta{
-    flex: 1 1 280px; /* Permite que cada tarjeta tome el mismo espacio disponible, pero no se reduzca por debajo de 280px de ancho */
-    background-color:white; 
-    padding: 20px; 
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Agrega una sombra para darle profundidad a la tarjeta */
-    display: flex; /* Permite usar flexbox para organizar el contenido dentro de la tarjeta */
-    flex-direction: column; /* Organiza el contenido de la tarjeta en una columna */
-    border-radius: 8px; /* Redondea los bordes de la tarjeta */
+.tarjeta {
+    flex: 1 1 280px; 
+    max-width: 400px; 
+    
+    /* Forzamos a que sean más largas hacia abajo */
+    min-height: 560px !important; 
+    
+    background-color: white; 
+    padding: 15px 20px; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); 
+    display: flex; 
+    flex-direction: column; 
+    border-radius: 8px; 
+    justify-content: space-between; 
+    
+    /* NUEVO: Esto empuja físicamente hacia abajo cualquier caja que venga después. En si movemos un toque mas abajo el formulario. */
+    margin-bottom: 60px !important; 
 }
 
-.tarjeta h2{
-    color: var(--color-primario);
+.tarjeta h2 {
+    font-size: 1.35rem; /* Título más moderado */
+    text-align: center;
+    margin-bottom: 12px;
 }
 
-.tarjeta ol, .tarjeta ul{
-    margin-top: auto; /* Empuja la lista hacia abajo tomando el espacio sobrante de la tarjeta y lo usa arriba para empujar la lista hacia abajo */
-    padding: 1.2rem; /* Agrega algo de espacio entre el contenido de la tarjeta y la lista */
-    padding-left: 0; /* Elimina el padding izquierdo para que los números o viñetas estén alineados con el borde de la tarjeta */
-    list-style-position: inside; /* Asegura que los números o viñetas estén dentro del contenedor de la tarjeta */
+.tarjeta p {
+    font-size: 0.88rem; /* Texto descriptivo un poco más pequeño */
+    margin-bottom: 8px; /* Reduce la separación entre párrafos */
+    line-height: 1.3;   /* Renglones un poco más juntos */
+}
+
+/* 3. Compactamos las listas (ol, ul) */
+.tarjeta ol, .tarjeta ul {
+    padding-left: 20px;
+    margin-bottom: 12px; /* Espacio antes de la foto */
+}
+
+.tarjeta li {
+    font-size: 0.88rem;
+    margin-bottom: 4px; /* Junta los ítems de las listas */
+}
+
+
+.tarjeta .imagen-programa {
+    width: 100%;        /* Ocupa todo el ancho de la tarjeta */
+    height: 140px;      /* Forzamos una altura fija y bajita para que no estire la tarjeta */
+    object-fit: cover;  /* Recorta la imagen de forma inteligente para que no se deforme */
+    border-radius: 6px; /* Bordes suaves para la foto */
+    margin-top: auto;   /* Asegura que se pegue abajo de todo */
 }
 
 .imagen-programa {
@@ -256,4 +287,13 @@ button:hover{
 h1{
     color: var(--color-primario);
     font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth; /* Hace que toda la página scrollee suave */
+}
+
+/* Evita que el menú sticky tape el inicio al usar enlaces # */
+#subir-al-inicio {
+    scroll-margin-top: 100px; 
 }
