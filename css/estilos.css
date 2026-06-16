@@ -81,22 +81,29 @@ main{
 
 main .menu-presentacion{
     text-align: center;
-    padding: 180px 20px 180px 20px;
     background-image: url('../imagenes/portada.png');
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.7);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 
-}
+    width: 100%;
+    height: clamp(400px,100vh,800px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;  /* Separación con que bloque inferior*/
+}  
 .menu-texto{
-    margin-top: -40px;
+    margin-top: -150px;
 }
 .menu-texto h2{
-    font-size: 3.5rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .menu-texto p{
-    font-size: 2rem;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
@@ -112,8 +119,7 @@ article, footer, aside, .formulario{
 }
 
 article{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 20px 20px 15px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     border: solid white;
     border-radius: 30px;
