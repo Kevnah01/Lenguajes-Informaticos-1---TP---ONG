@@ -44,61 +44,95 @@
         <section class="row justify-content-center mx-1">
             <article class="col-12">    <!-- Ocupa las 12 columnas de la fila y tiene un margin top de 4-->
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-                    <div class="contenedor-texto">
-                        <h2>Presentación</h2>
+                    <div class="contenedor-texto estilo-container">
+                        <h2 class="fw-bold fs-2 mb-3 text-center">Presentación</h2>
                         <p>Somos una organizacion sin fines de lucro dedicada a <span class="contenedor-resaltado">construir un mañana mejor</span> a través de la <span class="contenedor-resaltado">educación ambiental</span> y proyectos colectivos que <span class="contenedor-resaltado">transforman nuestro entorno</span>.</p>
                     </div>
                     <img class="contenedor-imagen img-fluid" src="imagenes/logo-presentacion.png" alt="Imagen de presentación">
                 </div>
             </article>
 
-            <article class="col-12">
-                <div class="contenedor-texto">
-                    <h3>¿Por qué lo hacemos?</h3>
+            <article class="col-12 pb-3">
+                <div class="contenedor-texto estilo-container">
+                    <h3 class="fw-bold fs-3 mb-3 text-center">¿Por qué lo hacemos?</h3>
                     <p>Creemos en el poder de la participación vecinal. Trabajamos para <em class="contenedor-resaltado">recuperar los espacios verdes de nuestra comunidad y fomentar un futuro sostenible</em> mediante el compromiso ambiental y el trabajo colaborativo.</p>
-                    <p>Conocé más sobre <a href="nosotros.html">nosotros.</a></p>
+                    <a href="nosotros.html"><button type="button" class="btn btn-outline-success">Conoce más sobre nosotros</button></a>
                 </div>
             </article>
 
-            <article class="col-12 col-md-7"> 
-                <div class="contenedor-texto align-items-md-start text-md-start">
-                    <h3>Acciones que transforman</h3>
+            <article class="col-12 col-md-7 pb-3"> 
+                <div class="contenedor-texto estilo-container align-items-md-start text-md-start">
+                    <h3 class="fw-bold fs-3 mb-3 text-center">Acciones que transforman</h3>
                     <dl>
-                        <dt><strong>Reforestación</strong></dt>
+                        <dt class="fw-bold fs-4"><strong>Reforestación</strong></dt>
                         <dd>
                             <em class="contenedor-resaltado">Restauramos corredores verdes</em> locales plantando árboles nativos junto a vecinos y escuelas.
                         </dd>
 
-                        <dt><strong>Educación</strong></dt>
+                        <dt class="fw-bold fs-4"><strong>Educación</strong></dt>
                         <dd><em>Talleres de reciclaje y consumo responsable</em> para formar <span class="contenedor-resaltado">ciudadanos conscientes</span>.</dd>
                     
-                        <dt><strong>Limpieza</strong></dt>
+                        <dt class="fw-bold fs-4"><strong>Limpieza</strong></dt>
                         <dd>
                             <em class="contenedor-resaltado">Jornadas comunitarias</em> en plazas y ríos para recuperar nuestro entorno urbano. <br>
-                            <a href="programas.html">Ver todos nuestros programas</a>
                         </dd>
                     </dl>
+                        <div class="mx-auto">
+                            <a href="programas.html"><button type="button" class="btn btn-outline-success">Ver todos nuestros programas</button></a>
+                        </div>
                 </div>
             </article>
 
-            <article class="col-12 col-md-4">  
-                <div class="contenedor-texto">
-                    <h3>Impacto logrado</h3>
+            <article class="col-12 col-md-4 pb-3">  
+                <div class="contenedor-texto estilo-container">
+                    <h3 class="fw-bold fs-3 mb-3 text-center">Impacto logrado</h3>
                     <ul>
                         <li>+500 Árboles nativos plantados.</li>
                         <li>12 escuelas alcanzadas por nuestros talleres.</li>
                         <li>30 Jornadas de limpieza realizadas.</li>
                         <li>100% Trabajo voluntario y autogestionado</li>
                     </ul>
+                    <img class="img-fluid" width="100px" src="https://imgs.search.brave.com/S1YBXX-eeUI5wH9P9nCdtKg6ohKMN1QZdP2qk9dEbhM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNzQv/MTY3LzQ2Ni9zbWFs/bC9zdHlsaXplZC1h/dXR1bW4tdHJlZS13/aXRoLXllbGxvdy1s/ZWF2ZXMtdmVjdG9y/LmpwZw" alt="Imagen de árbol">
                 </div>
             </article>
         </section>
-        <aside>
-            <h4>ONG vinculadas a nuestra causa</h4>
-            <a href="https://www.greenpeace.org/argentina/" target="_blank" rel="noopener noreferrer">Greenpeace</a> <br>
-            <a href="https://wwf.panda.org/es/" target="_blank" rel="noopener noreferrer">WWF</a>
-        </aside>
 
+        <aside class="container">
+            <h2 class="text-center fw-bold fs-3 pt-4">¡Datos curiosos y algunas ONG que comparten nuestra visión!</h2>
+            <p class="text-center text-muted">Acaso... ¿Ya las conocías?</p> <!--TEXT-MUTED baja intensidad visual a un gris apagado-->
+            <div class="d-flex flex-column flex-md-row align-items-start justify-content-center gap-4">
+                <div class="col-12 col-md-5 estilo-container">
+                    <h4 class="fw-bold fs-3 mb-3 text-center">Eco Datos</h4>
+                    <h6 class="fw-bold fs-4">Árboles</h6>
+                    <div class="mb-2">
+                        <img class="img-fluid" width="35" src="imagenes/hoja.png" alt="Imagen de hoja">
+                    </div>
+                    <p><span class="fw-bold">¿Sabías que...?</span> Un árbol adulto absorbe 22kg de CO2 al año.</p>
+                    <h6 class="fw-bold fs-5">Animales</h6>
+                    <div class="mb-2">
+                        <img class="img-fluid" width="35" src="https://imgs.search.brave.com/xqODrtBt-NHyYAcGsc38ndXga7Wbw-Nizfu5vQ8B0T4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTcv/MTgyLzY3OC9zbWFs/bC9taWxrLWNvdy1p/bGx1c3RyYXRpb24t/aW4tbWluaW1hbC1z/dHlsZS1wbmcucG5n" alt="Imagen de un animal">
+                    </div>
+                    <p><span class="fw-bold">¿Sabías que...?</span> Para producir 1 kg de carne de vaca se necesitan 15.000 litros de agua.</p>
+                </div>
+                <div class="col-12 col-md-5 d-flex flex-column">
+                    <div class="estilo-container">
+                        <div class="mb-2">
+                            <img class="img-fluid" width="130" src="https://upload.wikimedia.org/wikipedia/commons/6/69/Greenpeace_logo.svg" alt="Logo de greenpeace">
+                        </div>
+                        <p>Líderes en campañas globales por el medio ambiente.</p>
+                        <a href="https://www.greenpeace.org/argentina/" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-outline-success">Visitar Greenpeace</button></a>
+                    </div>
+            
+                    <div class="estilo-container">
+                        <div class="mb-2">
+                            <img class="img-fluid" width="80" src="https://imgs.search.brave.com/vrHRbEjZC59cqF3Dt_dbH8KcHsoi-ynQDg_uvxx2fgI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvd3dmL3d3Zl9Q/TkcxLnBuZw" alt="Logo de WWF">
+                        </div>
+                        <p>Conservación de la vida silvestre y ecosistemas.</p>
+                        <a href="https://wwf.panda.org/es/" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-outline-success">Visitar WWF</button></a>
+                    </div>
+                </div>
+            </div>
+        </aside>
     </main>
 
     <footer class="bg-dark text-light py-4 mt-5 text-center">

@@ -11,6 +11,9 @@
     margin: 0;
     padding: 0;
 }
+.color-texto-primario{
+    color: var(--color-primario)
+}
 header{
     position: sticky;   /* Permite que el header se quede fijo en la parte superior al hacer scroll */
     top: 0;             /* Se pega al top de la ventana */
@@ -114,49 +117,32 @@ main .boton-presentacion button{
     margin-right: 10px;
 }
 
-article, footer, aside, .formulario{
+article, footer .formulario{
     background-color: white;
 }
 
 article{
     margin: 20px 20px 15px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     border: solid white;
     border-radius: 30px;
-}
-article h2{
-    font-size: 2rem;
-}
-article h3{
-    font-size: 1.8rem;
-    padding: 0.5rem;
-}
-article p{
-    font-size: 1.2rem;
-}
-article dt{
-    font-size: 1.5rem;
-}
-article dd{
-    font-size: 1.2rem;
-}
-article li{
-    font-size: 1.2rem;
 }
 article em{
     font-style: normal;
 }
-footer{
-    font-size: 1rem;
-    color: rgb(0, 0, 0);
+/* TODOS LOS SIGUIENTES ESTILOS SE USAN EN EL INDEX.HTML*/
+.estilo-container{  /* Bloque genérico*/
+    margin-top: 20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border: solid white;
+    border-radius: 30px;
+    background-color: white;
+    padding: 1.5rem;
 }
-/*Clases genéricas de diseño de articulos*/
-.contenedor-resaltado{
+.contenedor-resaltado{ /* Se encarga de resaltar la palabras importantes*/
     color: var(--color-primario);
     font-weight: bold;
 }
-.contenedor-texto{
+.contenedor-texto{ /* Bloque genérico de centrado de texto*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,10 +152,11 @@ footer{
 .contenedor-imagen{
     max-width: 250px;
 }
-.borde-superior{
-    border-top: 1.5px solid rgb(99, 78, 78);
+footer{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
-
 
 .formulario form{
     display: flex;
