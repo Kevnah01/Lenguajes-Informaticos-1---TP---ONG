@@ -174,7 +174,7 @@ footer{
     font-size: small;
 }
 
-button{
+/* button{
     background-color: var(--color-secundario);
     color: white;
     border: none;
@@ -191,7 +191,7 @@ button{
 
 button:hover{
     transform: scale(1.1);
-}
+} */
 
 .resaltar{
     color: rgb(6, 138, 6);
