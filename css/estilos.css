@@ -198,6 +198,7 @@ button:hover{
 
 .resaltar{
     color: rgb(6, 138, 6);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.607);
 }
 
 .quienes-somos{
