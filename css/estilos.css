@@ -216,8 +216,8 @@ button:hover{
 .contenedor-programas{
     display: flex; /* Permite usar flexbox para organizar las tarjetas de los programas */
     flex-direction: row; /* Organiza las tarjetas en una fila */
-    gap: 20px; /* Agrega espacio entre las tarjetas */
-    justify-content: space-between; /* Distribuye las tarjetas estirando el espacio sobrante entre ellas hacia los extremos */
+    gap: 30px; /* Agrega espacio entre las tarjetas */
+    justify-content: center; /* Distribuye las tarjetas estirando el espacio sobrante entre ellas hacia los extremos */
     padding: 20px; /* Agrega algo de espacio alrededor de las tarjetas para que no queden pegadas al borde del contenedor */
     padding-top: 0; /* Elimina el padding superior para que las tarjetas queden más cerca del menu */
     flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la siguiente línea si ya no caben en la pantalla */
@@ -225,10 +225,8 @@ button:hover{
 
 .tarjeta {
     flex: 1 1 280px; 
-    max-width: 400px; 
-    
-    /* Forzamos a que sean más largas hacia abajo */
-    min-height: 560px !important; 
+    max-width: 400px; /* Forzamos a que sean más largas hacia abajo */
+    min-height: auto; 
     
     background-color: white; 
     padding: 15px 20px; 
@@ -246,6 +244,8 @@ button:hover{
     font-size: 1.35rem; /* Título más moderado */
     text-align: center;
     margin-bottom: 12px;
+    color: var(--color-primario);
+    font-weight: bold;
 }
 
 .tarjeta p {
@@ -268,8 +268,8 @@ button:hover{
 
 .tarjeta .imagen-programa {
     width: 100%;        /* Ocupa todo el ancho de la tarjeta */
-    height: 140px;      /* Forzamos una altura fija y bajita para que no estire la tarjeta */
-    object-fit: cover;  /* Recorta la imagen de forma inteligente para que no se deforme */
+    height: auto;      /* Altura natural sin cortarse */
+    object-fit: contain;  /* Toda la imagen queda dentro de la tarjeta */
     border-radius: 6px; /* Bordes suaves para la foto */
     margin-top: auto;   /* Asegura que se pegue abajo de todo */
 }
