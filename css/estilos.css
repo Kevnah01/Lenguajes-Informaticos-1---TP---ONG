@@ -3,6 +3,8 @@
     /* Paleta de Colores*/
     --color-primario: rgb(15, 115, 15);
     --color-secundario: #2ba329;
+    --color-resaltado-modo-oscuro: rgb(46, 139, 46);
+
     --color-caja: white;
     --color-texto-oscuro: black;
     /* Sombras y Animaciones */
@@ -228,4 +230,40 @@ footer{
   width: 100%;
   font-weight: bold;
   display: inline-block;
+}
+
+/* MODO OSCURO */
+
+/* Modo oscuro del HEADER*/
+body.modo-oscuro header{
+    background-color: #26292d;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.114);
+}
+body.modo-oscuro .nav-link{
+    color: #e2dacb;
+}
+body.modo-oscuro .nav-link:hover{
+    color: var(--color-resaltado-modo-oscuro);
+}
+body.modo-oscuro h1{
+    color: var(--color-resaltado-modo-oscuro);
+}
+/* Modo oscuro del CUERPO */
+body.modo-oscuro{
+    background-color: #121814;
+    color: #e2dacb;
+}
+body.modo-oscuro .estilo-container{
+    background-color: #1f2621;
+    border-color: #2d3830;
+}
+body.modo-oscuro .menu-texto h2{
+    color: rgba(0, 0, 0, 0.82);
+}
+body.modo-oscuro .contenedor-resaltado{
+    color: var(--color-resaltado-modo-oscuro);
+}
+body.modo-oscuro .card{
+    background-color: #2a312d;
+    color: #e2dacb;
 }
