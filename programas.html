@@ -26,6 +26,7 @@
                     <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><button class="btn btn-success" id="btn-modo-oscuro">Modo oscuro</button></li>
                 </ul>
             </div>
         </nav>
@@ -33,124 +34,112 @@
 
 
     <main class="container my-5">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
-            <div class="col d-flex">
-            <article class="estilo-container h-100 d-flex flex-column">
-                <div class="tarjeta">
-                <h2 class="titulo-tarjeta">Reforestación Urbana</h2>
-                <p><strong>Descripción:</strong> Programa de reforestación urbana que busca restaurar corredores verdes locales mediante plantación de árboles para mejorar la calidad del aire y generar más espacio verde.</p>
-                <p><strong>Dirigido a:</strong> Escuelas, vecinos, voluntarios y empresas que deseen apoyar acciones de restauración ambiental.</p>
-                <p><strong>Cómo participar:</strong> Sumándote a nuestras jornadas de plantación los fines de semana.</p>
+        <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+            <!--Programa 1-->
+            <article class="col d-flex">
+                <div class="estilo-container h-100 d-flex flex-column tarjeta">
+                    <h2 class="titulo-tarjeta">Reforestación Urbana</h2>
+                    <p><strong>Descripción:</strong> Programa de reforestación urbana que busca restaurar corredores verdes locales mediante plantación de árboles para mejorar la calidad del aire y generar más espacio verde.</p>
+                    <p><strong>Dirigido a:</strong> Escuelas, vecinos, voluntarios y empresas que deseen apoyar acciones de restauración ambiental.</p>
+                    <p><strong>Cómo participar:</strong> Sumándote a nuestras jornadas de plantación los fines de semana.</p>
 
-                <ol class="lista-tarjeta">
-                    <li>Capacitación ambiental</li>
-                    <li>Plantación de árboles nativos</li>
-                    <li>Seguimiento de crecimiento</li>
-                </ol>
-                </div>
-                <div class="mt-auto">
-                <img src="imagenes/reforestacion.png" alt="Personas plantando árboles en un parque" loading="lazy" class="img-tarjeta img-fluid">
+                    <ol class="lista-tarjeta">
+                        <li>Capacitación ambiental</li>
+                        <li>Plantación de árboles nativos</li>
+                        <li>Seguimiento de crecimiento</li>
+                    </ol>
+                    <img src="imagenes/reforestacion.png" alt="Personas plantando árboles en un parque" loading="lazy" class="img-tarjeta img-fluid mt-auto">
                 </div>
             </article>
-            </div>
-            <div class="col d-flex">
-            <article class="estilo-container h-100 d-flex flex-column">
-                <div class="tarjeta">
-                <h2 class="titulo-tarjeta">Educación Ambiental</h2>
-                <p><strong>Descripción:</strong> Brindamos talleres sobre reciclaje, consumo responsable y cuidado del medio ambiente.</p>
-                <p><strong>Dirigido a:</strong> Estudiantes de todas las edades, comunidad local y organizaciones ambientales.</p>
-                <p><strong>Cómo participar:</strong> Inscribiéndote a nuestros talleres gratuitos o solicitando una charla para tu escuela o grupo.</p>
+            <!--Programa 2-->
+            <article class="col d-flex">
+                <div class="estilo-container h-100 d-flex flex-column tarjeta">
+                    <h2 class="titulo-tarjeta">Educación Ambiental</h2>
+                    <p><strong>Descripción:</strong> Brindamos talleres sobre reciclaje, consumo responsable y cuidado del medio ambiente.</p>
+                    <p><strong>Dirigido a:</strong> Estudiantes de todas las edades, comunidad local y organizaciones ambientales.</p>
+                    <p><strong>Cómo participar:</strong> Inscribiéndote a nuestros talleres gratuitos o solicitando una charla para tu escuela o grupo.</p>
 
-                <ul class="lista-tarjeta">
-                    <li>Acceso 100% gratuito</li>
-                    <li>Modalidad presencial y virtual</li>
-                    <li>Material didáctico incluido</li>
-                </ul>
+                    <ul class="lista-tarjeta">
+                        <li>Acceso 100% gratuito</li>
+                        <li>Modalidad presencial y virtual</li>
+                        <li>Material didáctico incluido</li>
+                    </ul>
+                    <img src="imagenes/educacion.png" alt="Niños aprendiendo sobre reciclaje en un taller" loading="lazy" class="img-tarjeta img-fluid mt-auto">
                 </div>
-                <div class="mt-auto">
-                <img src="imagenes/educacion.png" alt="Niños aprendiendo sobre reciclaje en un taller" loading="lazy" class="img-tarjeta img-fluid">
-            </div>
             </article>
-        </div>
-        <div class="col d-flex">
-            <article class="estilo-container h-100 d-flex flex-column">
-                <div class="tarjeta">
-                <h2 class="titulo-tarjeta">Limpieza de Espacios Públicos</h2>
-                <p><strong>Descripción:</strong> Organizamos jornadas de limpieza en plazas, ríos y áreas verdes para promover la conciencia ambiental y mejorar el entorno urbano.</p>
-                <p><strong>Dirigido a:</strong> Comunidad en general.</p>
-                <p><strong>Cómo participar:</strong> Uniéndote a nuestras jornadas de limpieza que se realizan mensualmente en diferentes puntos de la ciudad.</p>
+            <!--Programa 3-->
+            <article class="col d-flex">
+                <div class="estilo-container h-100 d-flex flex-column tarjeta">
+                    <h2 class="titulo-tarjeta">Limpieza de Espacios Públicos</h2>
+                    <p><strong>Descripción:</strong> Organizamos jornadas de limpieza en plazas, ríos y áreas verdes para promover la conciencia ambiental y mejorar el entorno urbano.</p>
+                    <p><strong>Dirigido a:</strong> Comunidad en general.</p>
+                    <p><strong>Cómo participar:</strong> Uniéndote a nuestras jornadas de limpieza que se realizan mensualmente en diferentes puntos de la ciudad.</p>
             
-                <ul class="lista-tarjeta">
-                    <li>Jornadas de limpieza mensuales</li>
-                    <li>Provisión de guantes y bolsas</li>
-                    <li>Coordinación con centros de reciclaje</li>
-                </ul>
-                </div>
-                <div class="mt-auto">
-                <img src="imagenes/limpieza.png" alt="Voluntarios recogiendo basura en un parque" loading="lazy" class="img-tarjeta img-fluid">
+                    <ul class="lista-tarjeta">
+                        <li>Jornadas de limpieza mensuales</li>
+                        <li>Provisión de guantes y bolsas</li>
+                        <li>Coordinación con centros de reciclaje</li>
+                    </ul>
+                    <img src="imagenes/limpieza.png" alt="Voluntarios recogiendo basura en un parque" loading="lazy" class="img-tarjeta img-fluid mt-auto">
                 </div>
             </article>
-        </div>
-        </div>
+        </section>
+        <!--Sección dek Formulario-->
         <section id="unete-al-cambio" class="p-5">
-            <form class="estilo-container borde-sup-verde">
-            <div class="row text-center">
-                <h2 class="titulos mb-3">Inscripción a Programas</h2>
-                <p class="text-muted">Para inscribirte en alguno de nuestros programas, completa el siguiente formulario.</p>
-                <hr class="text-muted">
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-
+            <form class="estilo-container borde-sup-verde row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="titulos mb-3">Inscripción a Programas</h2>
+                    <p class="text-secondary">Para inscribirte en alguno de nuestros programas, completa el siguiente formulario.</p>
+                    <hr class="text-secondary">
+                </div>
             
-                
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="nombre" class="form-label">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingrese su nombre" required>
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingrese su nombre" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="apellido" class="form-label">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Ingrese su apellido" required>
+                        </div>
                     </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="apellido" class="form-label">Apellido:</label>
-                        <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Ingrese su apellido" required>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="programa" class="form-label">Programa de interés:</label>
+                            <select id="programa" name="programa" class="form-select" aria-label="Selecciona un programa de interés" required>
+                                <option value="" disabled selected>Selecciona un programa</option>
+                                <option value="reforestacion">Reforestación Urbana</option>
+                                <option value="educacion">Educación Ambiental</option>
+                                <option value="limpieza">Limpieza de Espacios Públicos</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="tipo" class="form-label">¿Quién realiza la consulta?</label>
+                            <select id="tipo" name="tipo" class="form-select" aria-label="Selecciona el tipo de perfil que consulta" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="estudiante">Estudiante</option>
+                                <option value="organizacion">Organización</option>
+                                <option value="particular">Particular</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="mensaje" class="form-label">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" class="form-control textarea-fijo" placeholder="Deje su mensaje" rows="4"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-outline-success px-5 py-2 rounded-pill fw-bold">Enviar</button>
                     </div>
                 </div>
-
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="ejemplo@correo.com" required>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="programa" class="form-label">Programa de interés:</label>
-                        <select id="programa" name="programa" class="form-select" aria-label="Selecciona un programa de interés" required>
-                            <option value="" disabled selected>Selecciona un programa</option>
-                            <option value="reforestacion">Reforestación Urbana</option>
-                            <option value="educacion">Educación Ambiental</option>
-                            <option value="limpieza">Limpieza de Espacios Públicos</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="tipo" class="form-label">¿Quién realiza la consulta?</label>
-                        <select id="tipo" name="tipo" class="form-select" aria-label="Selecciona el tipo de perfil que consulta" required>
-                            <option value="" disabled selected>Selecciona una opción</option>
-                            <option value="estudiante">Estudiante</option>
-                            <option value="organizacion">Organización</option>
-                            <option value="particular">Particular</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="mb-4">
-                    <label for="mensaje" class="form-label">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" class="form-control textarea-fijo" placeholder="Deje su mensaje" rows="4"></textarea>
-                </div>
-
-                <div class="text-center">
-                    <button type="submit" class="btn btn-outline-success px-5 py-2 rounded-pill fw-bold">Enviar</button>
-                </div>
-                </div>
-            </div>
             </form>
         </section>
     </main>
@@ -170,5 +159,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
