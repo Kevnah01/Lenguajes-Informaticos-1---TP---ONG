@@ -141,6 +141,14 @@ main .menu-presentacion{
     padding-left: 1.2rem;
 }
 
+.tarjeta-oficina {
+    padding: 1rem; 
+    border-radius: 0.5rem; 
+    border: 1px solid; 
+    background-color: #d1e7dd; 
+    border-color: #a3cfbb;
+}
+
 #subir-al-inicio { /* Evita que el menú sticky tape el inicio al usar enlaces # */
     scroll-margin-top: 100px; 
 }
@@ -248,6 +256,11 @@ body.modo-oscuro .nav-link:hover{
 body.modo-oscuro h1{
     color: var(--color-resaltado-modo-oscuro);
 }
+
+body.modo-oscuro .navbar-toggler-icon {
+    filter: invert(1);
+}
+
 /* Modo oscuro del CUERPO */
 body.modo-oscuro{
     background-color: #121814;
@@ -265,5 +278,31 @@ body.modo-oscuro .contenedor-resaltado{
 }
 body.modo-oscuro .card{
     background-color: #2a312d;
+    color: #e2dacb;
+}
+
+/* Modo oscuro del Formulario */
+body.modo-oscuro .form-control, body.modo-oscuro .form-select{
+    background-color: #2a312d;
+    color: #e2dacb;
+}
+
+body.modo-oscuro .form-control::placeholder{
+    color: #e2dacb;
+}
+
+/* Modo oscuro Contacto */
+body.modo-oscuro a{
+    color:#e2dacb;
+}
+
+body.modo-oscuro .tarjeta-oficina {
+    /* El color verde oscuro personalizado para el contenedor */
+    background-color: rgba(25, 135, 84, 0.2);
+    border-color: rgba(25, 135, 84, 0.4);
+}
+
+/* El texto cambia al color claro */
+body.modo-oscuro .tarjeta-oficina .c-black {
     color: #e2dacb;
 }
