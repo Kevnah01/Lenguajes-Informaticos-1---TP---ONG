@@ -240,6 +240,30 @@ footer{
   display: inline-block;
 }
 
+/* CONFIGURACIÓN BASE DEL BOTÓN AMBIENTAL (MARCO Y SOMBRA VERDE) */
+.btn-modo-ambiental {
+    background-color: transparent;
+    border: 2px solid var(--color-secundario);
+    box-shadow: 0 0 10px rgba(43, 163, 41, 0.4);
+    transition: all var(--transicion-suave);
+    padding: 6px 12px;
+}
+
+/* Resplandor verde más intenso al pasar el mouse (hover) o hacer foco */
+.btn-modo-ambiental:hover,
+.btn-modo-ambiental:focus {
+    box-shadow: 0 0 18px rgba(43, 163, 41, 0.9);
+    border-color: var(--color-primario);
+    background-color: rgba(43, 163, 41, 0.08);
+}
+
+/* El ícono se renderiza en el color verde primario en modo claro */
+.btn-modo-ambiental svg {
+    fill: var(--color-primario);
+    transition: fill var(--transicion-suave);
+}
+
+
 /* MODO OSCURO */
 
 /* Modo oscuro del HEADER*/
@@ -305,4 +329,9 @@ body.modo-oscuro .tarjeta-oficina {
 /* El texto cambia al color claro */
 body.modo-oscuro .tarjeta-oficina .c-black {
     color: #e2dacb;
+}
+
+/* Cambios del Botón Ambiental en Modo Oscuro (Ícono Blanco) */
+body.modo-oscuro .btn-modo-ambiental svg {
+    fill: #ffffff;
 }
