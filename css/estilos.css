@@ -30,6 +30,16 @@ body{
     background-color: rgb(252, 239, 220);
 }
 
+/* TRANSICIÓN DE MODO BLANCO A MODO OSCURO */
+
+body, 
+.estilo-container, 
+.card, 
+.bg-body-tertiary, 
+h1, h2, h3, p, a, nav {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
 main{
     padding: 1.5rem;
 }
@@ -79,6 +89,7 @@ main .menu-presentacion{
     justify-content: center;
     align-items: center;
     margin-bottom: 1.5rem;  /* Separación con que bloque inferior*/
+    margin-top: 0 !important;
 }  
 
 .menu-texto{
